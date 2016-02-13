@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BrandAloka</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/TimeCircles.css"/>
+    <link rel="stylesheet" href="css/viewbox.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery-1.12.0.min.js" type="text/javascript"></script>
+	<script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+	<script src="js/functions.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="js/CustomGoogleMapMarker.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.viewbox.min.js"></script>
+    <script src="js/pie-chart.js"></script>
+
+    <script type="text/javascript">
+
+function initialize() {
+
+	var myLatlng = new google.maps.LatLng(43.2260777,27.9226537);
+	var mapOptions = {
+		zoom: 16,
+		center: myLatlng,
+		disableDefaultUI: true
+	}
+	
+	var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	
+	
+	// Example standard marker
+	var marker = new google.maps.Marker({
+		position: myLatlng,
+		map: map,
+        icon: 'images/pointer-icon.png' ,
+		title: 'Str. Vasil Stavrev 13'
+	});
+	/*
+	overlay = new CustomMarker(
+		myLatlng, 
+		map,
+		{
+			marker_id: '123'
+		}
+	);
+    */
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+ 
+</head>
+	<body>
+		<section class="intro">  
+            <div class="header">
+                 <div class="tiles">
+                    <div class="header_mac"><a href="#" class="scroll">
+                        <i class="icon1"></i>
+                        <h3>Our works</h3>
+                    </a></div>
+                    <div class="header_book"><a href="#" class="scroll">
+                        <i class="icon2"></i>
+                        <h3>What we do</h3>
+                    </a></div>
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt=""/></a>
+                    </div>
+                    <div class="header_team"><a href="#team" class="scroll">
+                        <i class="icon3"></i>
+                        <h3>Our team</h3>
+                    </a></div>
+                    <div class="header_about"><a href="#about" class="scroll">
+                        <i class="icon4"></i>
+                        <h3>About us</h3>
+                    </a></div>
+                    <div class="header_contact"><a href="#touch" class="scroll">
+                        <i class="icon5"></i>
+                        <h3>Get in touch</h3>
+                    </a></div>
+                    <div class="header_social">	
+                        <ul>	
+                           <li><a href=""> <i class="fb1"> </i> </a></li>
+                           <li><a href=""> <i class="tw1"> </i> </a></li>
+                           <li><a href=""> <i class="db1"> </i> </a></li>
+                           <li><a href=""> <i class="g1"> </i> </a></li>
+                           <li><a href=""> <i class="skype"> </i> </a></li>
+                           <li><a href=""> <i class="vimeo"> </i> </a></li>
+                        </ul>
+                    </div>
+                    <div class="header_arrow">
+                      <a href="#arrow" class="scroll"><span> </span></a>
+                    </div>
+
+                 </div>
+            </div>
+		</section>
+
+		<section id="about" class="about">  
+			<div class="about-content">
+				<h1>About <span>us</span></h1>
+                <br>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit <span>voluptatem accusantinum</span> doloremque totam rem aperiam, eaque ipsa <span>quae ab illo</span> inventore veritatis et quasi architecto beat dicta sunt explicabo.</p>
+				<div class="side">
+					<div class="text">
+                        <p>Suspendisse consequat nisl et consectetur hendrerit. Cras sit amet turpis ut purus <span>pellentesque ullamcorper</span> sed ut nisl. In sed vulputate libero. Nullam nec auctor elit, vitae mattis. 
+                        </p>
+                        
+                        <p>commodo. Suspendisse tincidunt orci ultrices, viverra mauris a, tristique mauris. <span>Curabitur pretium</span> pellentesque risus, in adipiscing tortor consequat id.
+				        </p>
+				        <input type="submit" name="learnmore" value="Learn more" class="button1"/>
+					</div>
+					<div class="photo">
+                        <ul class="bxslider">
+                            <li><img src="images/aboutuspic.jpg" alt="pic1" /></li>
+                            <li><img src="images/aboutuspic.jpg" alt="pic1" /></li>
+                            <li><img src="images/aboutuspic.jpg" alt="pic1" /></li>
+
+                        </ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="team" class="ourteam">  
+			<div class="ourteam-content">
+				<h1><span ID="white">Our</span> <span>team</span></h1>
+                <div >
+                    <div class="img1">
+                    <img src="images/team1.jpg" alt="CEO/Founder">
+                    </div>
+                    <div class="img2">
+                    <img src="images/team2.jpg" alt="Manager">
+                    </div>
+                    <div class="img3">
+                    <img src="images/team3.jpg" alt="Web Developer">
+                    </div>
+                    <div class="img4">
+                    <img src="images/team4.jpg" alt="Web Designer">
+                    </div>
+                </div>
+                <ul>
+                    <li><a>CEO / Founder</a></li>
+                    <li><a>Manager</a></li>
+                    <li><a>Web developer</a></li>
+                    <li><a>Web designer</a></li>
+                </ul>
+			</div>
+
+		</section>
+
+                <div class="sliderbot">
+                    <div class="sliderb">
+                        <ul class="bot-slider">
+                        <li>            
+                            <img src="images/c1.png" class="img-responsive" alt=""/>
+                            <img src="images/c2.png" class="img-responsive" alt=""/>
+                            <img src="images/c3.png" class="img-responsive" alt=""/>
+                            <img src="images/c4.png" class="img-responsive" alt=""/>
+                        </li>
+                        <li>            
+                            <img src="images/c1.png" class="img-responsive" alt=""/>
+                            <img src="images/c2.png" class="img-responsive" alt=""/>
+                            <img src="images/c3.png" class="img-responsive" alt=""/>
+                            <img src="images/c4.png" class="img-responsive" alt=""/>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+
+		<section class="ourskills">  
+			<div class="ourskills-content">
+				<h1>Our <span>skills</span></h1>
+                <ul>
+                    <li>                
+                        <div id="example"  class="pie-title-center" data-percent="85">
+                        <span class="pie-value"></span>
+                            <span class="pie-under">Web design</span>
+                        </div>
+                    </li>
+                    <li>                
+                        <div id="example2"  class="pie-title-center" data-percent="65">
+                        <span class="pie-value"></span>
+                            <span class="pie-under">Branding design</span>
+                        </div>
+                    </li>
+                    <li>                
+                        <div id="example3"  class="pie-title-center" data-percent="80">
+                        <span class="pie-value"></span>
+                            <span class="pie-under">Time management</span>
+                        </div>
+                    </li>
+                    <li>                
+                        <div id="example4"  class="pie-title-center" data-percent="65">
+                        <span class="pie-value"></span>
+                            <span class="pie-under">Creative Cloud</span>
+                        </div>
+                    </li>
+                    <li>                
+                        <div id="example5"  class="pie-title-center" data-percent="85">
+                        <span class="pie-value"></span>
+                            <span class="pie-under">Web development</span>
+                        </div>
+                    </li>
+                </ul>
+			</div>
+		</section>
+		
+		<section class="latestprojects">  
+            <div class="latest-content">
+            <h1>Our <span>latest</span> project</h1>	
+                <ul class="gallery">
+                    <li>
+						<a href="images/pic1.jpg" class="image-link">
+							<img src="images/pic1.jpg" alt="image01"/>
+							<span></span>
+						</a>
+					</li>
+                    <li>
+						<a href="images/pic2.jpg" class="image-link">
+							<img src="images/pic2.jpg" alt="image02"/>
+							<span></span>
+						</a>
+					</li>
+                    <li>
+						<a href="images/pic3.jpg" class="image-link">
+							<img src="images/pic3.jpg" alt="image03"/>
+							<span></span>
+						</a>
+					</li>
+                    <li>
+						<a href="images/pic4.jpg" class="image-link">
+							<img src="images/pic4.jpg" alt="image04"/>
+							<span></span>
+						</a>
+					</li>
+                    <li>
+						<a href="images/pic5.jpg" class="image-link">
+							<img src="images/pic5.jpg"  alt="image05"/>
+							<span></span>
+						</a>
+					</li>
+                    <li>
+						<a href="images/pic6.jpg" class="image-link">
+							<img src="images/pic6.jpg" alt="image06"/>
+							<span></span>
+						</a>
+					</li>
+                    <li>
+						<a href="images/pic7.jpg" class="image-link">
+							<img src="images/pic7.jpg" alt="image07"/>
+							<span></span>
+						</a>
+					</li>
+                    <li>
+						<a href="images/pic8.jpg" class="image-link">
+							<img src="images/pic8.jpg" alt="image08"/>
+							<span></span>
+						</a>
+					</li>
+                </ul>
+                </div>
+		</section>
+
+        <section class="subscribe">
+            <h1>Subscribe <span>our</span> newsletter</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit <span>voluptatem accusantium.</span></p>
+            <form  class="mail" name="" method="get" action="">
+                  <input type="text" class="mailInput" value="enter your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'enter your email address';}">          
+                <input type="submit" class="subscribeBtn" name="" value="Subscribe now" />
+            </form>
+        </section>
+        
+        <section  id="touch" class="getintouch">
+            <h1>Get in <span>touch</span></h1>
+            	<div id="map-canvas">
+	</div>
+            
+        </section>
+        
+        <div id="footer">
+            <span class="footer">Copyright 2014 @andreyyann, All right reserved.</span>
+        </div> 
+	</body>
+</html>
